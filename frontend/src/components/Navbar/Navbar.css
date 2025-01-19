@@ -1,0 +1,20 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+} 
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+
+}
+.nav-container .links ul{
+    display: flex;
+    gap: 40px;
+}
+.nav-container .wrapper{
+    display: flex;
+    gap: 15px;
+}

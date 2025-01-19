@@ -1,0 +1,15 @@
+#collections{
+    padding: 50px 0;
+}
+
+#collections h1{
+    text-align: center;
+    font-size: 32px;
+}
+
+.collection-cards{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}

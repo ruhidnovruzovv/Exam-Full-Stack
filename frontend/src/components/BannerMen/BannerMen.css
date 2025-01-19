@@ -1,0 +1,34 @@
+#men{
+    background-color: #e9e9e9;
+    padding-top: 80px;
+    margin: 50px 0;
+}
+.banner-men{
+    display: flex;
+    flex-wrap: wrap;
+}
+.men-left{
+    width: 50;
+    height: 872px;
+}
+.men-left img{
+    height: 100%;
+    width: 100%;
+}
+.men-right{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.men-right h1{
+    font-size: 70px;
+}
+.men-right button{
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+}
