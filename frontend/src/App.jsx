@@ -6,6 +6,7 @@ import Admin from './pages/Admin/Admin';
 import Basket from './pages/Basket/Basket';
 import Shops from './pages/Shops/Shops';
 import Contact from './pages/Contact/Contact';
+import Wishlist from './pages/Wishlist/Wishlist';
 
 const App = () => {
 
@@ -32,6 +33,10 @@ const App = () => {
       {
         path: '/contact',
         element: <Contact />
+      },
+      {
+        path: '/wishlist',
+        element: <Wishlist />
       }
     ]
   }])

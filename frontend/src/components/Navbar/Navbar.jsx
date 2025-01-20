@@ -38,7 +38,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="wrapper">
-          <Link to='#'><FavoriteBorderIcon /></Link>
+          <Link to='/wishlist'><FavoriteBorderIcon /></Link>
           <Link to='/basket'><ShoppingBasketIcon /> <sup>{totalBasketItems}</sup></Link>
         </div>
       </div>

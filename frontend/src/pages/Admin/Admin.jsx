@@ -113,6 +113,7 @@ const Admin = () => {
             </form>
           </div>
         )}
+        <h1 style={{textAlign:'center', marginBottom: '20px'}}>Admin Panel</h1>
 
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 700 }} aria-label="customized table">
