@@ -5,11 +5,12 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToBasket } from '../../redux/features/basketSlice';
 import { addAndRemoveWishlist } from '../../redux/features/wishlistSlice';
+import { useNavigate } from 'react-router-dom';
 
 const Card = ({ product }) => {
   const dispatch = useDispatch();
   const {wishlist} = useSelector((state) => state.wishlist); 
-
+  const navigate = useNavigate()
   const addToCart = (product) => {
     dispatch(addToBasket(product));
   };
@@ -34,7 +35,7 @@ const Card = ({ product }) => {
         )}
       </div>
       <div className="card-img">
-        <img src={product?.image} alt={product?.name || 'Product Image'} />
+        <img src={product?.image} alt={product?.name || 'Product Image'}  onClick={()=>navigate(`/details/${product._id}`)} style={{cursor: 'pointer'}}/>
       </div>
       <div className="card-content">
         <h3 className="title">{product?.name}</h3>
